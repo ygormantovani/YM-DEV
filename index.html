@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- ==========================================
+        CONFIGURAÇÕES DA PÁGINA
+    =========================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ygor Mantovani | Desenvolvedor Full Stack</title>
+    <meta name="description"
+        content="Desenvolvedor Full Stack especializado em criar soluções modernas para empresas utilizando HTML, CSS, JavaScript, React, Node.js e Inteligência Artificial.">
+    <meta name="keywords" content="Desenvolvedor FullStack, HTML, CSS, JavaScript, React, Node, IA">
+    <meta name="author" content="Ygor Mantovani">
+
+    <!-- Fonte Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+
+    <!--=========================================
+                LOADING
+    ==========================================-->
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+
+    <!--=========================================
+                HEADER
+    ==========================================-->
+    <header id="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                YM <span>Dev</span>
+            </a>
+
+            <!-- Menu -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Tecnologias</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão Mobile -->
+            <button id="menu-button">
+                <i class="ri-menu-4-fill"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--=========================================
+                HERO
+    ==========================================-->
+
+    <section class="hero" id="home">
+        <div class="container hero-container">
+
+            <!-- Texto -->
+            <div class="hero-text">
+                <span>
+                    Desenvolvedor Full Stack
+                </span>
+
+                <h1>
+                    Transformando ideias em soluções digitais.
+                </h1>
+
+                <p>
+                    Desenvolvimento de Sistemas Web,
+                    Landing Pages,
+                    APIs,
+                    Dashboards,
+                    Automações,
+                    Inteligência Artificial
+                    e soluções tecnológicas para empresas.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">
+                        Ver Projetos
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Vamos Conversar
+                    </a>
+                </div>
+
+                <!-- Redes -->
+                <div class="social">
+                    <a href="https://github.com/ygormantovani" target="_blank">
+                        <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/ygor-mantovani" target="_blank">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+
+                    <a href="https://instagram.com/_ymantovani" target="_blank">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+
+                    <a href="https://wa.me/5511952503033" target="_blank">
+                        <i class="ri-whatsapp-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Foto -->
+
+            <div class="hero-image">
+                <div class="circle"></div>
+                <img src="./assets/img/profile.jpeg" alt="Ygor Mantovani">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+            SOBRE
+==========================================-->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                Sobre Mim
+            </h2>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./assets/img/profile.jpg" alt="Ygor Mantovani">
+                </div>
+
+                <div class="about-text">
+                    <h3>
+                        Olá, eu sou Ygor Mantovani.
+                    </h3>
+
+                    <p>
+                        Tenho 26 anos e sou Desenvolvedor Full Stack.
+
+                        Atualmente curso Análise e Desenvolvimento de Sistemas pela Estácio e também participo da
+                        formação DevClub.
+
+                        Minha missão é desenvolver soluções modernas que ajudem empresas a automatizar processos,
+                        aumentar produtividade e gerar resultados.
+                    </p>
+
+                    <p>
+                        Minha experiência na área de automação industrial fortaleceu minhas habilidades em resolução de
+                        problemas, trabalho em equipe e pensamento estratégico.
+
+                        Hoje aplico essas competências no desenvolvimento de sistemas web modernos utilizando as
+                        principais tecnologias do mercado.
+                    </p>
+
+                    <a href="./assets/pdf/Curriculo-Ygor-Mantovani.pdf" download class="btn">
+                        Baixar Currículo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            TECNOLOGIAS
+==========================================-->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                Tecnologias
+            </h2>
+
+            <p class="section-description">
+                Tecnologias que utilizo para desenvolver aplicações modernas,
+                escaláveis e de alta performance.
+            </p>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="ri-html5-fill"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-css3-fill"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-javascript-fill"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-code-s-slash-line"></i>
+                    <h3>TypeScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-reactjs-line"></i>
+                    <h3>React</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-nodejs-fill"></i>
+                    <h3>Node.js</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-database-2-fill"></i>
+                    <h3>MongoDB</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-database-fill"></i>
+                    <h3>PostgreSQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-git-branch-fill"></i>
+                    <h3>Git</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-github-fill"></i>
+                    <h3>GitHub</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-cpu-line"></i>
+                    <h3>Docker</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ri-robot-2-line"></i>
+                    <h3>IA & Agentes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            SERVIÇOS
+==========================================-->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">
+                Como posso ajudar sua empresa
+            </h2>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <i class="ri-code-box-fill"></i>
+                    <h3>
+                        Desenvolvimento Web
+                    </h3>
+
+                    <p>
+                        Desenvolvimento de sistemas modernos,
+                        rápidos e totalmente responsivos.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <i class="ri-window-fill"></i>
+                    <h3>
+                        Landing Pages
+                    </h3>
+
+                    <p>
+                        Páginas profissionais focadas
+                        em conversão e geração de clientes.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <i class="ri-cloud-fill"></i>
+                    <h3>
+                        APIs REST
+                    </h3>
+
+                    <p>
+                        Integração entre sistemas
+                        utilizando Node.js e bancos de dados.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <i class="ri-line-chart-fill"></i>
+                    <h3>
+                        Dashboards
+                    </h3>
+
+                    <p>
+                        Painéis administrativos
+                        completos para gestão empresarial.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <i class="ri-settings-5-fill"></i>
+                    <h3>
+                        Automação
+                    </h3>
+
+                    <p>
+                        Automatização de processos,
+                        reduzindo custos e aumentando produtividade.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <i class="ri-robot-2-fill"></i>
+                    <h3>
+                        Inteligência Artificial
+                    </h3>
+
+                    <p>
+                        Agentes inteligentes,
+                        automações com IA e integração com LLMs.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            PROJETOS
+==========================================-->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                Projetos
+            </h2>
+
+            <p class="section-description">
+                Alguns projetos desenvolvidos durante minha formação
+                e atuação como Desenvolvedor Full Stack.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Projeto 01 -->
+                <article class="project-card">
+                    <img src="./assets/img/projeto-moedas.png" alt="Conversor de Moedas">
+                    <div class="project-content">
+                        <h3>
+                            Conversor de Moedas
+                        </h3>
+                        <p>
+                            Aplicação desenvolvida utilizando HTML,
+                            CSS e JavaScript para conversão
+                            de moedas em tempo real.
+                        </p>
+
+                        <span>
+                            HTML • CSS • JavaScript
+                        </span>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/ygormantovani/Projeto-Conversor-de-moedas" target="_blank"
+                                class="btn">
+                                GitHub
+                            </a>
+
+                            <a href="#" class="btn btn-secondary">
+                                Em breve
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 02 -->
+                <article class="project-card">
+                    <img src="./assets/img/projeto-cadastro.png" alt="Cadastro de Usuários">
+                    <div class="project-content">
+                        <h3>
+                            Cadastro de Usuários
+                        </h3>
+
+                        <p>
+                            Sistema de cadastro utilizando React,
+                            HTML, CSS e JavaScript com integração
+                            entre front-end e back-end.
+                        </p>
+
+                        <span>
+                            React • HTML • CSS • JavaScript
+                        </span>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/ygormantovani/devclub-cadastro-usuarios" target="_blank"
+                                class="btn">
+                                GitHub
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                Em breve
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            DIFERENCIAIS
+==========================================-->
+
+    <section id="differentials" class="differentials">
+        <div class="container">
+            <h2 class="section-title">
+                Por que trabalhar comigo?
+            </h2>
+
+            <p class="section-description">
+                Mais do que desenvolver código, meu objetivo é criar soluções
+                que agreguem valor ao seu negócio.
+            </p>
+
+            <div class="differentials-grid">
+                <article class="card">
+                    <i class="ri-code-s-slash-line"></i>
+                    <h3>Clean Code</h3>
+                    <p>
+                        Código organizado, documentado e de fácil manutenção.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <i class="ri-flashlight-fill"></i>
+                    <h3>Performance</h3>
+                    <p>
+                        Aplicações rápidas, leves e otimizadas.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <i class="ri-shield-check-fill"></i>
+                    <h3>Segurança</h3>
+                    <p>
+                        Desenvolvimento seguindo boas práticas de segurança.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <i class="ri-team-fill"></i>
+                    <h3>Comunicação</h3>
+                    <p>
+                        Trabalho em equipe, organização e foco em resultados.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            NÚMEROS
+==========================================-->
+
+    <section class="numbers">
+
+        <div class="container">
+
+            <div class="number-card">
+                <h2 class="counter" data-target="15">0</h2>
+                <span>Tecnologias</span>
+            </div>
+
+            <div class="number-card">
+                <h2 class="counter" data-target="2">0</h2>
+                <span>Anos resolvendo problemas</span>
+            </div>
+
+            <div class="number-card">
+                <h2 class="counter" data-target="100">0</h2>
+                <span>Comprometimento (%)</span>
+            </div>
+
+            <div class="number-card">
+                <h2 class="counter" data-target="24">0</h2>
+                <span>Suporte e evolução</span>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            TIMELINE
+==========================================-->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2 class="section-title">
+                Minha Jornada
+            </h2>
+
+            <div class="timeline-content">
+                <div class="timeline-item">
+                    <span>2022</span>
+                    <h3>Gama7 Automação</h3>
+                    <p>
+                        Atuação com montagem de cancelas, totens,
+                        manutenção, suporte técnico e resolução de problemas.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2024</span>
+                    <h3>DevClub</h3>
+                    <p>
+                        Formação Full Stack com foco em HTML, CSS,
+                        JavaScript, React, Node.js e Banco de Dados.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2025</span>
+                    <h3>Estácio</h3>
+                    <p>
+                        Início da graduação em Análise e Desenvolvimento de Sistemas.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>Hoje</span>
+                    <h3>Freelancer Full Stack</h3>
+                    <p>
+                        Desenvolvimento de aplicações web,
+                        APIs, automações e soluções utilizando IA.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            CONTATO
+==========================================-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                Vamos conversar?
+            </h2>
+            <p class="section-description">
+                Estou disponível para oportunidades,
+                projetos freelance e desenvolvimento de sistemas.
+            </p>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <input type="text" placeholder="Assunto">
+                <textarea placeholder="Conte um pouco sobre seu projeto..." rows="7"></textarea>
+                <button type="submit" class="btn">
+                    Enviar mensagem
+                </button>
+            </form>
+
+            <div class="contact-links">
+                <a href="mailto:ygor.mantovani@hotmail.com">
+                    <i class="ri-mail-fill"></i>
+                    ygor.mantovani@hotmail.com
+                </a>
+
+                <a href="https://wa.me/5511952503033" target="_blank">
+                    <i class="ri-whatsapp-fill"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--=========================================
+            FOOTER
+==========================================-->
+    <footer>
+        <div class="container">
+            <h2>
+                YM <span>Dev</span>
+            </h2>
+            <p>
+                Desenvolvendo soluções inteligentes para empresas.
+            </p>
+
+            <div class="footer-social">
+                <a href="https://github.com/ygormantovani" target="_blank">
+                    <i class="ri-github-fill"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/ygor-mantovani" target="_blank">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+
+                <a href="https://instagram.com/_ymantovani" target="_blank">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+
+                <a href="https://wa.me/5511952503033" target="_blank">
+                    <i class="ri-whatsapp-fill"></i>
+                </a>
+            </div>
+
+            <p class="copy">
+                © 2026 YM Dev • Desenvolvido por Ygor Mantovani.
+            </p>
+        </div>
+    </footer>
+
+    <!--=========================================
+            BOTÃO VOLTAR AO TOPO
+==========================================-->
+    <button id="backToTop">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!--=========================================
+            SCRIPTS
+==========================================-->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
