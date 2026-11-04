@@ -213,8 +213,8 @@ TEXTO HERO
 }
 
 .hero-text h1 {
-  font-size: clamp(36px, 4vw, 60px);
-  line-height: 1.1;
+    font-size: clamp(36px, 4vw, 60px);
+    line-height: 1.1;
 }
 
 .hero-text p {
@@ -228,59 +228,60 @@ TEXTO HERO
 
 /* CONTAINER DA FOTO */
 .hero-image {
-  position: relative;
-  width: 100%;
-  max-width: 380px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* FOTO DO DESENVOLVEDOR */
 .hero-image img {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
 
-  width: 100%;
-  height: 420px;
+    width: 100%;
+    height: 420px;
 
-  object-fit: cover;
-  object-position: center 25%;
+    object-fit: cover;
+    object-position: center 25%;
 
-  border-radius: 24px;
-  display: block;
+    border-radius: 24px;
+    display: block;
 }
 
 /* ELEMENTO DECORATIVO */
 .hero-image .circle {
-  position: absolute;
-  z-index: 1;
+    position: absolute;
+    z-index: 1;
 
-  width: 340px;
-  height: 340px;
+    width: 340px;
+    height: 340px;
 
-  border-radius: 50%;
-  background: rgba(37, 99, 235, 0.15);
-  filter: blur(35px);
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.15);
+    filter: blur(35px);
 }
+
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-  .hero-image {
-    max-width: 280px;
-    margin: 30px auto 0;
-  }
+    .hero-image {
+        max-width: 280px;
+        margin: 30px auto 0;
+    }
 
-  .hero-image img {
-    height: 320px;
-    object-position: center 20%;
-  }
+    .hero-image img {
+        height: 320px;
+        object-position: center 20%;
+    }
 
-  .hero-image .circle {
-    width: 260px;
-    height: 260px;
-  }
+    .hero-image .circle {
+        width: 260px;
+        height: 260px;
+    }
 }
 
 
