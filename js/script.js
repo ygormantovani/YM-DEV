@@ -45,12 +45,22 @@ const menuButton = document.querySelector("#menu-button");
 
 const menu = document.querySelector("#menu");
 
-menuButton.addEventListener("click", () => {
-
-    menu.classList.toggle("active");
-    menuButton.setAttribute("aria-expanded", String(menu.classList.contains("active")));
-
+function setMenuOpen(open) {
+    menu.classList.toggle("active", open);
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+}
+menuButton.addEventListener("click", () => setMenuOpen(!menu.classList.contains("active")));
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && menu.classList.contains("active")) {
+        setMenuOpen(false);
+        menuButton.focus();
+    }
 });
+document.addEventListener("click", event => {
+    if (!event.target.closest("header")) setMenuOpen(false);
+});
+window.matchMedia("(max-width: 1024px)").addEventListener("change", () => setMenuOpen(false));
 
 
 /*=====================================================
@@ -63,8 +73,7 @@ document.querySelectorAll("#menu a").forEach(link => {
 
     link.addEventListener("click", () => {
 
-        menu.classList.remove("active");
-        menuButton.setAttribute("aria-expanded", "false");
+        setMenuOpen(false);
 
     });
 
@@ -83,7 +92,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         e.preventDefault();
 
-        const destino = document.querySelector(this.getAttribute("href"));
+        const href = this.getAttribute("href");
+        if (href === "#") return;
+        const destino = document.getElementById(href.slice(1));
+        if (!destino) return;
 
         destino.scrollIntoView({
 

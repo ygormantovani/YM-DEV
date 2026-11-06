@@ -1,0 +1,64 @@
+/* Ajustes limitados a tablets e celulares; desktop mantém o CSS original. */
+@media (max-width: 1024px) {
+    html { scroll-padding-top: 90px; }
+    section, .numbers { padding: 72px 0; }
+    header .container { height: 72px; }
+    #menu-button { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; }
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        padding: 16px 5%; gap: 4px;
+        background: var(--dark);
+        border-bottom: 1px solid var(--border);
+        max-height: calc(100dvh - 72px);
+        overflow-y: auto;
+    }
+    #menu.active { display: flex; flex-direction: column; }
+    #menu a { display: block; padding: 12px 16px; }
+    .hero { min-height: auto; padding-top: 120px; }
+    .hero-container, .about-content { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+    .hero-text, .about-text { min-width: 0; }
+    .hero-text p { max-width: none; }
+    .hero-buttons, .project-buttons { flex-wrap: wrap; }
+    .about-image img { max-width: 100%; height: auto; }
+    .section-title { font-size: clamp(28px, 4vw, 40px); max-width: 100%; }
+    .section-description { margin-bottom: 40px; }
+    .services-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+    .projects-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+    .differentials-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+    .project-card, .service-card, .card { min-width: 0; }
+    .project-content, .service-card, .card { padding: 24px; overflow-wrap: anywhere; }
+    .btn { max-width: 100%; text-align: center; }
+    .contact-links a { min-width: 0; overflow-wrap: anywhere; }
+    .contact-links i { flex-shrink: 0; }
+}
+@media (max-width: 600px) {
+    section, .numbers { padding: 56px 0; }
+    .hero { padding-top: 108px; }
+    .hero-text h1 { font-size: clamp(30px, 8vw, 42px); overflow-wrap: anywhere; }
+    .hero-text > span { font-size: 14px; letter-spacing: 1px; }
+    .hero-text p { margin-top: 20px; margin-bottom: 28px; }
+    .hero-buttons { flex-direction: column; gap: 12px; margin-bottom: 28px; }
+    .hero-buttons .btn { width: 100%; }
+    .hero-image { margin-top: 0; }
+    .about-text h3 { font-size: 28px; }
+    .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .skill-card { padding: 24px 10px; overflow-wrap: anywhere; overflow: hidden; }
+    .skill-card h3 { font-size: 16px; }
+    .skill-card i { font-size: 40px; }
+    .projects-grid, .services-grid, .differentials-grid { gap: 24px; }
+    .project-content h3, .timeline-item h3 { font-size: 24px; }
+    .project-buttons { flex-direction: column; gap: 12px; }
+    .numbers .container { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .number-card { padding: 24px 10px; overflow-wrap: anywhere; }
+    .number-card h2 { font-size: 42px; }
+    .timeline-content { padding-left: 20px; margin-top: 40px; }
+    .timeline-item { padding-left: 24px; }
+    .contact-form { margin: 32px auto; }
+    .contact-links { gap: 24px; }
+    .contact-links a { font-size: 14px; gap: 8px; }
+    .social, .footer-social { gap: 12px; flex-wrap: wrap; }
+    footer { padding: 48px 0; }
+    #backToTop { width: 44px; height: 44px; right: 16px; bottom: 16px; }
+}
