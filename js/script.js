@@ -48,6 +48,7 @@ const menu = document.querySelector("#menu");
 menuButton.addEventListener("click", () => {
 
     menu.classList.toggle("active");
+    menuButton.setAttribute("aria-expanded", String(menu.classList.contains("active")));
 
 });
 
@@ -63,6 +64,7 @@ document.querySelectorAll("#menu a").forEach(link => {
     link.addEventListener("click", () => {
 
         menu.classList.remove("active");
+        menuButton.setAttribute("aria-expanded", "false");
 
     });
 

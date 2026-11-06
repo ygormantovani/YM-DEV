@@ -909,3 +909,232 @@ SELEÇÃO DE TEXTO
     background: var(--primary);
     color: white;
 }
+
+
+/* RESPONSIVIDADE YM-DEV — regras isoladas do desktop */
+@media (max-width: 1024px) {
+    .container {
+        width: min(92%, 1250px);
+    }
+
+    section {
+        padding: 88px 0;
+    }
+
+    header .container {
+        height: 76px;
+    }
+
+    #menu-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    header nav #menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 38px;
+        width: min(300px, 88vw);
+        padding: 14px;
+        flex-direction: column;
+        gap: 0;
+        background: #0f172a;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+        max-height: calc(100dvh - 90px);
+        overflow-y: auto;
+    }
+
+    header nav #menu.active {
+        display: flex;
+    }
+
+    header nav #menu a {
+        display: block;
+        padding: 12px 14px;
+    }
+
+    .hero-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .about-content {
+        grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .services-grid,
+    .differentials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 72px 0;
+        scroll-margin-top: 76px;
+    }
+
+    .section-title {
+        font-size: clamp(28px, 7vw, 38px);
+    }
+
+    .section-description {
+        margin-bottom: 38px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 125px;
+    }
+
+    .hero-container,
+    .about-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .hero-text,
+    .about-text {
+        min-width: 0;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(30px, 8vw, 44px);
+        overflow-wrap: anywhere;
+    }
+
+    .hero-text p {
+        line-height: 1.65;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 13px 22px;
+    }
+
+    .hero-image {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-image img {
+        height: 320px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .about-text h3 {
+        font-size: clamp(26px, 6vw, 34px);
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .skill-card {
+        padding: 28px 12px;
+        min-width: 0;
+    }
+
+    .services-grid,
+    .projects-grid,
+    .differentials-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .project-content,
+    .card {
+        padding: 24px;
+    }
+
+    .contact-form {
+        margin: 32px auto;
+        gap: 16px;
+    }
+
+    .contact-links {
+        gap: 18px;
+    }
+
+    #backToTop {
+        right: 16px;
+        bottom: 16px;
+        width: 46px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .social a {
+        width: 46px;
+        height: 46px;
+    }
+
+    .hero-image {
+        max-width: 250px;
+    }
+
+    .hero-image img {
+        height: 290px;
+    }
+
+    .hero-image .circle {
+        width: 235px;
+        height: 235px;
+    }
+}
